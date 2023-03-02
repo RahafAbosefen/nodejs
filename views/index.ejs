@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon </title>
+   
+    <style>
+      .card {
+      border: 1px solid #d96868;
+      border-radius: 4px;
+      padding: 40px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      max-width: 500px;
+      margin: 10px;
+      float: left ;
+    }
+    </style>
+<body>
+    <h1>pokemon members</h1>
+    <% for(var i=0; i<data.length; i++) {%>
+      <div class="card">
+        <h3>Name:<%= data[i].name %></h3>
+        <h3>Order: <%= data[i].order %></h3>
+      </div>
+  <% } %>
+  </body>
+</html>
